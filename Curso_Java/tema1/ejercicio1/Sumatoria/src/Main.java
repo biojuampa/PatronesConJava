@@ -9,5 +9,5 @@ public class Main {
         System.out.println(sumatoria);
     }
 
-    private static Function<ArrayList<Integer>, Integer> suma = arr -> arr.stream().reduce(0, (x,y) -> x+y);
+    private static Function<ArrayList<Integer>, Integer> suma = arr -> arr.stream().reduce(0, Integer::sum);
 }
